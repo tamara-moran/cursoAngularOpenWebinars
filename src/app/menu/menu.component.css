@@ -1,0 +1,13 @@
+#menu{
+    background-color:darkkhaki;
+}
+
+#menu li{
+    display: inline;
+}
+
+#menu li span{
+    font-family: Arial;
+    float: left;
+    padding: 10px;
+}
