@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Entrada } from 'src/app/shared/interfaces/entrada';
 
 @Component({
   selector: 'app-listado',
@@ -7,7 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListadoComponent implements OnInit {
 
-  constructor() { }
+  public listadoEntradas: Entrada[];
+
+  constructor() { 
+
+    this.listadoEntradas = [
+
+      {
+        titulo:  'Introduccion a Angular',
+        resumen: 'bla bla bla'
+      },
+      {
+        titulo:  'Componentes de Angular',
+        resumen: 'bla bla bla'
+      },
+      {
+        titulo:  'Introduccion a TypeScript',
+        resumen: 'bla bla bla'
+      }
+
+    ];
+
+  }
 
   ngOnInit(): void {
   }
