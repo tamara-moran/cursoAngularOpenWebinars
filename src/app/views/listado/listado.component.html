@@ -2,7 +2,7 @@
     <h3>Listado de entradas al blog: </h3>
     <app-entrada *ngFor="let entrada of listadoEntradas" 
         [entrada]="entrada" 
-        (click)="mostrarTitulo(entrada.titulo)">
+        (click)="mostrarTitulo(entrada.title)">
     </app-entrada>
     <!--Mostramos las entradas y por casda una levanta el evento click para mostrar el titulo-->
 
